@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Student Placement Predictor</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+<!-- HOME PAGE -->
+
+<section id="home">
+
+<h2>Welcome to Smart Student Placement Predictor and Skill Gap Analyser</h2>
+
+<p>AI-powered tool for placement prediction and Skill Gap 
+    Analysis</p>
+
+<button onclick="showForm()">Placement Predictor</button>
+
+<button onclick="showSkillGap()">Skill Gap Analyser</button>
+
+</section>
+
+
+
+<!-- STUDENT FORM -->
+
+<section id="formSection" class="hidden">
+
+<h2>Enter Student Details</h2>
+
+<form id="predictionForm">
+
+<label>Name</label>
+<input type="text" id="name" required>
+
+<label>CGPA</label>
+<input type="number" id="cgpa" required>
+
+<label>Logical Reasoning Score (0-10)</label>
+<input type="number" id="logic">
+
+<label>Programming Score (0-10)</label>
+<input type="number" id="programming">
+
+<label>Communication Skills (0-10)</label>
+<input type="number" id="communication">
+
+<label>Apptitude Score (0-10)</label>
+<input type="number" id="aptitude">
+
+<label>Internship Experience (0 or 3)</label>
+<input type="number" id="internship">
+
+<button type="submit" id="submitBtn">Predict Placement</button>
+
+</form>
+
+</section>
+
+
+
+<!-- RESULT PAGE -->
+
+<section id="resultSection" class="hidden">
+
+<h2 id="resultTitle">Prediction Result</h2>
+
+<div id="predictionResult"></div>
+
+<h3>Skill Gap Analysis</h3>
+
+<div id="skillGap"></div>
+
+<button onclick="goHome()">Try Again</button>
+
+</section>
+
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
